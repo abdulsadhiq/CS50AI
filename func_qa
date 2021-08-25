@@ -1,0 +1,152 @@
+Q1: The 'return' statement can only be at the end of the function definition?
+a, True
+b, False
+Ans: b
+
+Q2: A function can have multiple 'return' statements?
+a, True
+b, False
+Ans: a
+
+Q3: What is/are the purpose of writing 'pass' statement in the function definition? (Check all that apply)
+a, To evaluate the sytax of the function
+b, To avoid syntax error for having a function with empty body
+c, To pass the parameters into the function
+d, To pass the output of the function
+Ans: b
+
+Q4: What is the keyword to create functions without name?
+a, lambda
+b, def
+c, noname
+d, anonymous
+Ans: a
+
+Q5: What are the allowable data structures for a function parameter/argument? (Check all that apply)
+a, list
+b, dictionary
+c, set
+d, tuple
+Ans: a,b,c,d
+
+Q6:
+def task(skill='Python'):
+    print("Let's learn "+skill)
+	
+task('coding')
+
+What will be the output of the above code?
+a, Let's learn Python
+b, Let's learn coding
+c, Statements in both a & b
+d, Syntax error
+Ans: b
+
+Code for questions Q7 to Q9
+def sumall(a=1,b=2,c=3):
+    return a+b+c
+	
+Q7: What will be the output for the following function call statement?
+sumall(b=4,c=3,a=5)
+
+a, 12
+b, 6
+c, Syntax error
+d, 18
+Ans: a
+
+Q8: What will be the output for the following function call statement?
+sumall(b=4,c=3)
+
+a, 6
+b, 8
+c, 13
+d, Syntax error
+Ans: b
+
+Q9: What will be the output for the following function call statement?
+sumall(4,3,a=1)
+
+a, 2
+b, 8
+c, 14
+d, Syntax error
+Ans: d
+
+
+Q10: What is/are the correct syntax for implementing a function that takes arbitary number of keyword arguments?
+a, prefix double astriks ** in both function definition argument and pass a dictionary object with double astriks in function call argument
+b, prefix double astriks ** in both function definition argument and pass a dictionary object without double astriks in function call argument
+c, prefix double astriks ** in function definition argument and pass keyword arguments in the function call
+d, create function definition without arguments and pass dictionary object as argument in the function call
+Ans: a & c
+
+Q11:
+def sumall(*a):
+    return sum(a)
+	
+Which of the function call will not throw an error? (Check all that apply)
+a, sumall(*[1,2,3,4,5])
+b, sumall([1,2,3,4,5])
+c, sumall(100)
+d, sumall(*{10:1,20:2})
+Ans: a,c,d
+
+Q12:
+def varlyf(x=5):
+    x=50
+
+x=5000
+varlyf(500)
+print("Final value:",x)
+
+What will be the output of the print statement?
+a, Final value: 50
+b, Final value: 5000
+c, Final value: 5
+d, Final value: 500
+Ans: b
+
+Q13: Which is/are the incorrect syntax for 'return' statemet?
+a, return(a)
+b, return a+20
+c, retrun a
+d, return a=20
+Ans: d
+
+Q14: Which is/are the correct way of defining the function header?
+a, def myfunc():
+b, def myfunc(x=8):
+c, def myfunc:
+d, def myfunc(x):
+Ans: a,b,d
+
+Q15: Which of the following is a recursive function?
+a, 
+def recursive(x):
+    if x>1:
+        return(x*(x-1))
+    else:
+        return 1
+		
+b,
+recursive recfac(x):
+    if x>1:
+        return(x*recfac(x-1))
+    else:
+        return 1
+
+c,
+def recfac(x):
+    if x>1:
+        return(x*recfac(x-1))
+    else:
+        return 1
+		
+d,		
+def recfac(x):
+    if x>1:
+        recursive(x*recfac(x-1))
+    else:
+        recursive 1	
+Ans: c		
